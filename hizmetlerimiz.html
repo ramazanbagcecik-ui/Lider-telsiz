@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#102b52">
 
   <title>Telsiz ve Ekipman Kiralama Hizmetleri | Lider Telsiz</title>
-  <meta name="description" content="Lider Telsiz; telsiz satış ve kiralama, interkom, metal kapı ve el dedektörü, Termobox kiralama, set tedarik ve teknik servis hizmetleri sunar.">
+  <meta name="description" content="Lider Telsiz; telsiz satış ve kiralama, interkom, metal kapı ve el dedektörü, Termobox kiralama, set tedarik ve teknik servis hizmetleri.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://lidertelsiz.com.tr/hizmetlerimiz.html">
 
@@ -70,7 +70,7 @@
       backdrop-filter:blur(12px);
     }
     .nav-wrap {
-      height:96px;
+      height:82px;
       display:flex;
       align-items:center;
       justify-content:space-between;
@@ -79,8 +79,8 @@
     .brand { display:inline-flex; align-items:center; text-decoration:none; }
     .brand img {
       width:auto;
-      height:76px;
-      max-width:260px;
+      height:52px;
+      max-width:180px;
       object-fit:contain;
     }
     .nav-links {
@@ -181,32 +181,6 @@
       color:var(--muted);
       font-size:14px;
       line-height:1.8;
-    }
-
-    .service-tabs {
-      display:flex;
-      justify-content:center;
-      flex-wrap:wrap;
-      gap:9px;
-      margin-bottom:32px;
-    }
-    .service-tab {
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      min-height:40px;
-      padding:0 17px;
-      border:1px solid #dce5f0;
-      border-radius:999px;
-      background:#fff;
-      color:#52647b;
-      font-size:11px;
-      font-weight:800;
-    }
-    .service-tab.active {
-      background:var(--navy);
-      border-color:var(--navy);
-      color:#fff;
     }
 
     .services-grid {
@@ -395,9 +369,11 @@
     .footer-brand { max-width:380px; }
     .footer-brand img {
       width:auto;
-      height:48px;
-      padding:4px;
-      border-radius:8px;
+      height:36px;
+      max-width:150px;
+      object-fit:contain;
+      padding:3px;
+      border-radius:7px;
       background:#fff;
       margin-bottom:12px;
     }
@@ -420,17 +396,22 @@
       bottom:22px;
       display:grid;
       place-items:center;
-      width:58px;
-      height:58px;
+      width:56px;
+      height:56px;
       border-radius:50%;
       color:#fff;
       background:#20c768;
       text-decoration:none;
       box-shadow:0 8px 24px rgba(0,0,0,.22);
-      font-size:27px;
       transition:transform .2s;
     }
     .floating-whatsapp:hover { transform:translateY(-3px) scale(1.04); }
+    .floating-whatsapp svg {
+      width:30px;
+      height:30px;
+      display:block;
+      fill:currentColor;
+    }
 
     .mobile-drawer,.drawer-overlay { display:none; }
 
@@ -447,8 +428,8 @@
       .container { width:min(calc(100% - 32px),600px); }
       .topbar-inner { justify-content:center; }
       .topbar-right { display:none; }
-      .nav-wrap { height:82px; }
-      .brand img { height:62px; max-width:220px; }
+      .nav-wrap { height:70px; }
+      .brand img { height:44px; max-width:165px; }
       .nav-links,.nav-actions .btn { display:none; }
       .menu-toggle { display:inline-grid; place-items:center; }
 
@@ -473,7 +454,7 @@
         justify-content:space-between;
         margin-bottom:28px;
       }
-      .drawer-head img { height:42px; width:auto; }
+      .drawer-head img { height:36px; width:auto; max-width:145px; object-fit:contain; }
       .drawer-close {
         border:0;
         background:var(--surface);
@@ -511,15 +492,6 @@
       .services-intro { margin-bottom:30px; }
       .services-intro h1 { font-size:30px; }
       .services-intro p { font-size:13px; }
-      .service-tabs {
-        justify-content:flex-start;
-        overflow-x:auto;
-        flex-wrap:nowrap;
-        padding-bottom:4px;
-        scrollbar-width:none;
-      }
-      .service-tabs::-webkit-scrollbar { display:none; }
-      .service-tab { flex:0 0 auto; }
       .services-grid { grid-template-columns:1fr; gap:15px; }
       .service-card { grid-template-columns:1fr; min-height:auto; }
       .service-card-image { min-height:210px; padding:18px; }
@@ -604,7 +576,7 @@
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="index.html" aria-label="Lider Telsiz ana sayfa">
-        <img src="lider-telsiz-logo.png" alt="Lider Telsiz logo" width="260" height="76">
+        <img src="lider-telsiz-logo.png" alt="Lider Telsiz logo" width="180" height="52" fetchpriority="high">
       </a>
 
       <nav aria-label="Ana menü">
@@ -657,15 +629,6 @@
           </p>
         </div>
 
-        <div class="service-tabs" aria-label="Hizmet kategorileri">
-          <span class="service-tab active">Kiralama</span>
-          <span class="service-tab">Telsiz</span>
-          <span class="service-tab">İnterkom</span>
-          <span class="service-tab">Güvenlik</span>
-          <span class="service-tab">Termobox</span>
-          <span class="service-tab">Diğer Hizmetler</span>
-        </div>
-
         <div class="services-grid">
 
           <article class="service-card" id="telsiz-kiralama">
@@ -683,7 +646,7 @@
                 etkinliklerden uzun süreli projelere kadar ihtiyacınıza uygun
                 telsiz ve aksesuar seçenekleri için bilgi alabilirsiniz.
               </p>
-              <a class="service-detail" href="index.html#iletisim">Telsiz kiralama bilgisi alın <span>→</span></a>
+              <a class="service-detail" href="tel:+905395926070">Telsiz kiralama bilgisi alın <span>→</span></a>
             </div>
           </article>
 
@@ -702,7 +665,7 @@
                 sağlıyoruz. Ekiplerin hızlı ve düzenli haberleşmesine ihtiyaç
                 duyulan projeler için uygun sistem seçeneklerini sunuyoruz.
               </p>
-              <a class="service-detail" href="index.html#iletisim">İnterkom kiralama bilgisi alın <span>→</span></a>
+              <a class="service-detail" href="tel:+905395926070">İnterkom kiralama bilgisi alın <span>→</span></a>
             </div>
           </article>
 
@@ -721,7 +684,7 @@
                 Projenizin süresine ve kullanım alanına göre kiralama seçenekleri
                 hakkında bilgi alabilirsiniz.
               </p>
-              <a class="service-detail" href="index.html#iletisim">Dedektör kiralama bilgisi alın <span>→</span></a>
+              <a class="service-detail" href="tel:+905395926070">Dedektör kiralama bilgisi alın <span>→</span></a>
             </div>
           </article>
 
@@ -740,7 +703,7 @@
                 Kısa süreli organizasyonlar ve dönemsel ihtiyaçlar için kiralama
                 seçenekleri hakkında bizimle iletişime geçebilirsiniz.
               </p>
-              <a class="service-detail" href="index.html#iletisim">El dedektörü kiralama bilgisi alın <span>→</span></a>
+              <a class="service-detail" href="tel:+905395926070">El dedektörü kiralama bilgisi alın <span>→</span></a>
             </div>
           </article>
 
@@ -760,7 +723,7 @@
                 kiralıyoruz. Kullanım sürenize ve ihtiyaç duyduğunuz ekipman
                 miktarına göre kiralama seçeneklerini öğrenebilirsiniz.
               </p>
-              <a class="service-detail" href="index.html#iletisim">Termobox kiralama bilgisi alın <span>→</span></a>
+              <a class="service-detail" href="tel:+905395926070">Termobox kiralama bilgisi alın <span>→</span></a>
             </div>
           </article>
 
@@ -778,7 +741,7 @@
                 oluyoruz. Projenizin ihtiyaçlarını paylaşarak tedarik seçenekleri
                 hakkında bilgi alabilirsiniz.
               </p>
-              <a class="service-detail" href="index.html#iletisim">Set tedarik bilgisi alın <span>→</span></a>
+              <a class="service-detail" href="tel:+905395926070">Set tedarik bilgisi alın <span>→</span></a>
             </div>
           </article>
 
@@ -795,7 +758,7 @@
                 teknik servis desteği sağlıyoruz. Cihazınızın yaşadığı sorunu ve
                 modelini paylaşarak servis süreci hakkında bilgi alabilirsiniz.
               </p>
-              <a class="service-detail" href="index.html#iletisim">Teknik servis bilgisi alın <span>→</span></a>
+              <a class="service-detail" href="tel:+905395926070">Teknik servis bilgisi alın <span>→</span></a>
             </div>
           </article>
 
@@ -833,7 +796,7 @@
     <div class="container">
       <div class="footer-main">
         <div class="footer-brand">
-          <img src="lider-telsiz-logo.png" alt="Lider Telsiz" width="180" height="48" loading="lazy">
+          <img src="lider-telsiz-logo.png" alt="Lider Telsiz" width="150" height="36" loading="lazy">
           <p>
             Telsiz kiralama ve satışı, interkom kiralama, güvenlik ekipmanları,
             Termobox kiralama, set tedarik ve teknik servis hizmetleri.
@@ -857,7 +820,11 @@
      href="https://wa.me/905395926070"
      target="_blank"
      rel="noopener noreferrer"
-     aria-label="WhatsApp üzerinden iletişim">◉</a>
+     aria-label="WhatsApp üzerinden iletişim">
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M16 3.2A12.6 12.6 0 0 0 5.2 22.3L3.5 28.7l6.5-1.7A12.6 12.6 0 1 0 16 3.2zm0 22.9a10.2 10.2 0 0 1-5.2-1.4l-.4-.2-3.9 1 1-3.8-.3-.4A10.2 10.2 0 1 1 16 26.1zm5.6-7.6c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.8-1.8-2.1-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.5 0-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.3 3.2c.2.2 2.2 3.4 5.3 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2.1-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.4z"/>
+    </svg>
+  </a>
 
   <script>
     (() => {
